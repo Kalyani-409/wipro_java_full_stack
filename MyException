@@ -1,0 +1,17 @@
+package Exceptions;
+import java.util.*;
+public class MyExpection {
+  public static void main(String[] args) {
+	  Scanner sc=new Scanner(System.in);
+	  System.out.println("Enter a number: ");
+	  try {
+	  int a=sc.nextInt();
+	  System.out.println(a*a);
+	  }
+	  catch(InputMismatchException e) {
+		  
+		  System.out.println("Entered input is not a valid format for an integer");
+	    }
+	  }
+  }
+
